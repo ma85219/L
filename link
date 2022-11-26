@@ -1,0 +1,74 @@
+<!Doctype html>
+<html>
+<head>
+
+		<link rel="stylesheet" type="text/css" href="C:\Users\ma852\Desktop\gameStyle.css" />
+		<script>
+			
+		var summy=Math.floor(Math.random()*10+1+Math.random()*10+1)
+		function random(){
+			
+			alert("Random Sum is " + summy);			
+		}
+		function check(){
+			var Ans=document.getElementById("myAnswer").value
+			if(Ans==summy){
+			document.getElementById("remind").innerHTML = "You got it";
+			}else{
+			document.getElementById("remind").innerHTML = "You are wrong";
+			}
+		}
+		</script>
+</head>
+<body>
+	<h1>Helpful Maths Links</h1>
+	<div id="container">
+	<div id="lefCol">
+	<p>Easier Maths Link</p>
+		<ul>
+			<li><a href="http://www.mathsisfun.com/">Maths is fun</a></li>
+			<li><a href="https://drmaths.org/">Dr Maths</a></li>
+		</ul>
+	</div>
+	<div id="medCol">
+	<p>Harder Maths Link</p>
+		<ul>
+			<li><a href="http://www.aqa.org.uk/subjects/mathematics/as-and-a-
+level/mathematics-6360/past-papers-and-mark-schemes">AQA Maths</a></li>
+			<li><a href="http://www.open.ac.uk/courses/qualifications/q31">Open University Maths</a></li>
+		</ul>
+	</div>
+	<div id="rigCol">
+	</div>
+	
+	</div>
+	<a href="numberGuessGame.html">Number Guessing Game</a>
+	<button onclick="random()">Generate Sum</button>
+	<select id="myAnswer">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+		<option>10</option>
+		<option>11</option>
+		<option>12</option>
+		<option>13</option>
+		<option>14</option>
+		<option>15</option>
+		<option>16</option>
+		<option>17</option>
+		<option>18</option>
+		<option>19</option>
+		<option>20</option>
+	</select>
+	<button onclick="check()">Check answer</button>
+	<div id="remind"></div>
+	<a href="mailto:ma85219@yahoo.com.tw?subject=Book question&body=When is the next edition coming out?">Send Email</a>
+	
+</body>
+</html>
